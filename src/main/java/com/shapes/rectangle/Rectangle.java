@@ -2,17 +2,24 @@ package com.shapes.rectangle;
 
 public class Rectangle
 {
-    public double calculateArea(double length, double width)
-    {
-        double area;
-        area =length * width;
-        return area;
+    double length;
+    double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
     }
 
-    public double calculatePerimeter(double length, double width)
+    public double calculateArea()
     {
-        double perimeter;
-        perimeter = 2 *(length+width);
-        return perimeter;
+
+        return length * width;
+
+    }
+
+    public double calculatePerimeter()
+    {
+        return 2 *(length+width);
+
     }
 }
